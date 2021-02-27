@@ -26,8 +26,13 @@ urlpatterns = [
     path('about-us/',include('aboutus.urls',namespace='aboutus')),
     path('contact/',include('contact.urls',namespace='contact')),
     path('',include('home.urls' , namespace='home')),
+    path('summernote/',include('django_summernote.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.site_header="Restaurant Admin Panel"
+admin.site.site_title="Restaurant Admin"
+admin.site.site_index_title="Welcome to Restaurant Admin Panel"
 

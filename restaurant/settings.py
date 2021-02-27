@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'taggit',
     'bootstrap4',
+    'django_summernote',
     'meals',
     'reservation',
     'blog',
@@ -135,6 +136,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/'media'
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
