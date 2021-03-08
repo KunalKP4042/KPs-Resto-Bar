@@ -6,14 +6,14 @@ from aboutus.models import Why_Choose_Us
 # Create your views here.
 
 def home(request):
-    meals = Meals.objects.all()
+    meals = Meals.objects.filter(id__in=[1,2,3])
     meal_list = Meals.objects.all()
     categories = Category.objects.all()
     posts = Post.objects.all()
     latest_post = Post.objects.last()
     why_choose_us = Why_Choose_Us.objects.all()
     context = {
-        'meal':meals,
+        'meals':meals,
         'meal_list':meal_list,
         'categories':categories,
         'posts':posts,

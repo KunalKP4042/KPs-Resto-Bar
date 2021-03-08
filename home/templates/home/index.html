@@ -80,7 +80,7 @@
         <div class="section pt-0 pb-0">
 
           <div class="menus d-flex bg-light">
-            {% for meal in meals %}
+          {% for meal in meals %}
             <div class="d-flex item">
               <div class="image" style="background-image: url({{meal.image.url}})" data-aos="fade"></div>
               <div class="text">
@@ -89,7 +89,7 @@
                 <p class="price">Rs.{{meal.price}}/-</p>
               </div>
             </div> <!-- .item -->
-            {% endfor %}
+          {% endfor %}
         </div>
       </div> <!-- .section -->
 
