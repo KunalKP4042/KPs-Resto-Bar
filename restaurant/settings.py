@@ -29,7 +29,7 @@ SECRET_KEY = 'cq(m_=xvl$2^x813$i)3ghrr*h*4tz*9ji!_w0)2!@@xu+=b4n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kpsrestonbar.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['kpsrestonbar.herokuapp.com','127.0.0.1']
 
 
 # Application definition
