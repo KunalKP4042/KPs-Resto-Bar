@@ -133,6 +133,8 @@ USE_TZ = True
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
 STATIC_URL = '/static/'
 STATIC_URLS = BASE_DIR/'static'
 STATICFILES_DIRS = [BASE_DIR/'static']
